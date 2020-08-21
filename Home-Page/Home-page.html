@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <img href="#home" src="logo2.png" alt="logo" width="150" height="150"class="w3-bar-item w3-button">
+<br><br><h1>Love Eat</h1>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right ">
+     <h2> <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#sign" class="w3-bar-item w3-button">Sign Up</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a></h2>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="yellow-macron.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Good Friend With Good Food</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="breakfast.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Love Eat</h1><br>
+      <h5 class="w3-center">Good Friend And Good Food</h5>
+      <p class="w3-large">Eat with me is an application that links you up with people share the same interest and the same schedule and free time as yours.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">  It will allow you to go out and eat together with people other than eating alone.
+                                                        You can pair with a random person or invite people that you would like to eat out with them.
+                                                        The website will contact the restaurant and make a reservation for you once the group conforms their availability.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="sign">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Sign Up</h1><br>
+        <form  class ="reg_form" method="post" action="register.php">
+          <h4>Name</h4>
+          <input class="w3-input w3-animate-input" type="text" style="width:30%">
+	 
+
+  	<div class="input-group">
+  	  <h4>Email</h4>
+  	  <input class="w3-input w3-animate-input" type="text" style="width:30%">
+  	</div>
+  
+  	<div class="input-group">
+  	  <h4>Password</h4>
+  	  <input class="w3-input w3-animate-input" type="password" style="width:30%">
+  	</div>
+  	<div class="input-group">
+  	  <h4>Confirm password</h4>
+  	  <input class="w3-input w3-animate-input" type="password" style="width:30%">
+  	</div>
+	<div class="input-group">
+  	  <h4>Bio</h4>
+      <textarea class="w3-animate-input" name="bio" style="width:30%" rows="4" cols="30"></textarea>
+  	</div>
+  
+  <h4>Gender</h4>
+    <p class="w3-text-grey" for="male">
+	<input type="radio" id="male" name="gender" value="male">
+ Male</p>
+  <p class="w3-text-grey" for="male">
+	<input type="radio" id="male" name="gender" value="male">
+ Female</p><br>
+  	<div class="input-group">
+      <button id="sign" name="sign" class="button" type= "submit" style="vertical-align:middle" ><span>Sign Up</span></button>
+  	  <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: darkgreen;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+  	</div>
+	
+	
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="coffee.gif" class="w3-round w3-image w3-opacity-min" alt="coffee" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>ZIP Code 16202 Riyadh.SA</b></p>
+    <p>You can also contact us by: </p>
+    <h4>phone: 0553344333</h4>
+    <h4>email: LoveEat@gmail.com</h4>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://twitter.com/rooof880?lang=en" title="twitter" target="_blank" class="w3-hover-text-yellow">SWE For Development</a></p>
+</footer>
+
+</body>
+</html>
